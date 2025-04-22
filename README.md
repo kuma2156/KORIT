@@ -1,3 +1,18 @@
+## 📌 핀된 리포지토리
+
+### ☕ korit_4_java
+> 자바 기초부터 실습까지! 탄탄한 자바 내공 다지기 프로젝트
+
+🛠️ 주요 내용:
+- ✅ 클래스, 객체, 상속, 다형성 개념 정리
+- ✅ 간단한 콘솔 앱 예제 구현
+- ✅ 자바 코드 스타일 연습
+
+📁 사용 기술:  
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
+
+🔗 [리포지토리 바로가기](https://github.com/kuma2156/korit_4_java)
+
 # 📘 코리아IT Java 수업
 
 코리아IT Java 수업에 대한 내용정리를 하였습니다.
