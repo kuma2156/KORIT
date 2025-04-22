@@ -19,7 +19,7 @@
 
 ---
 
-### 🗄️ 언어 (Language)
+### ☕️ 언어 (Language)
 <table style="background:white; padding:10px; border-radius:8px;">
     <tr>
         <td align="center">
