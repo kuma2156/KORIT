@@ -19,6 +19,20 @@
 
 ---
 
+### 🗄️ 언어 (Language)
+<table style="background:white; padding:10px; border-radius:8px;">
+    <tr>
+        <td align="center">
+            <img src="https://github.com/user-attachments/assets/e345f034-71e7-4fd8-b002-5034674a2fe8" width="64" height="64">
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><b>Java</b></td>
+    </tr>
+</table>
+
+
+
 ## 🗓️ 학습 일지 요약
 
 | 날짜         | 챕터/주제        | 주요 학습 내용                                                                  |
