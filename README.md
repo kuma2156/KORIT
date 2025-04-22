@@ -8,9 +8,6 @@
 - ✅ 간단한 콘솔 앱 예제 구현
 - ✅ 자바 코드 스타일 연습
 
-📁 사용 기술:  
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
-
 
 # 📘 코리아IT Java 수업
 
