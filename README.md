@@ -1,0 +1,26 @@
+# 코리아IT Java 수업
+
+코리아IT Java 수업에 대한 내용정리를 하였습니다.
+
+<div align="left">
+    <h1>💻 학습자</h1>
+    <table>
+        <tr>
+            <td align="center"><img src="https://github.com/user-attachments/assets/61049fd5-5e06-4b17-bb51-d925ea3e68dc" width="250"></td>
+        </tr>
+        <tr>
+            <td align="center"><b>김명규</b></td>
+        </tr>
+        <tr>
+            <td align="center"><b>https://github.com/kuma2156</b></td>
+        </tr>
+    </table>
+</div>
+
+---
+
+## 🗓️ 학습 일지 요약
+
+| 날짜         | 챕터/주제        | 주요 학습 내용                                                                  |
+|--------------|------------------|----------------------------------------------------------------------------------|
+| 4월 22일     | ch1 ~ ch3        | Java의 정의 , 데이터의 형태, 연산자                |
