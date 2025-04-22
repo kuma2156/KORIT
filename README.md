@@ -11,7 +11,6 @@
 📁 사용 기술:  
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=java&logoColor=white)
 
-🔗 [리포지토리 바로가기](https://github.com/kuma2156/korit_4_java)
 
 # 📘 코리아IT Java 수업
 
