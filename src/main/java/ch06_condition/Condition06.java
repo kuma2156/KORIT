@@ -4,50 +4,49 @@ import java.util.Scanner;
 
 public class Condition06 {
     public static void main(String[] args) {
-        // Condition05 을 생각하면 100초과 / 0 미만의 점수도 입력이 가능합니다
-        // 이러한 에러를 수정해야할 필요가 있다.
-        Scanner sc = new Scanner(System.in);
-        int score = 0;
-        String grade= "";
+        // Condition05를 생각했을 때 100 초과 / 0 미만의 점수가 입력 가능합니다.
+        // 애초에 잘못된 점수를 입력했을 때 불가능한 점수 입력이라고 안내를 하고 싶다면
+        Scanner scanner = new Scanner(System.in);
+        int score;
+        String grade = "";
 
-        System.out.print("점수를 입력하세요 : ");
-        score = sc.nextInt();
-
-        // 문제 사항을 해결하지 못하는 방식 if 문은 순차적으로 실행되기 때문이다.
-//        if(score >= 90){
+        System.out.print("점수를 입력하세요 >>> ");
+        score = scanner.nextInt();
+        // 문제 상황을 해결하지 못하는 방식
+//        if(score > 89) {
 //            grade = "A";
-//        }else if(score >= 80){
+//        } else if (score > 79) {
 //            grade = "B";
-//        }else if(score >= 70){
+//        } else if (score > 69) {
 //            grade = "C";
-//        }else if(score >= 60){
+//        } else if (score > 59) {
 //            grade = "D";
-//        }else if(score > 100){
-//            System.out.println("불가능한 점수 입력입니다.");
-//        }else if(score < 0){
-//            System.out.println("불가능한 점수 입력입니다.");
-//        }
-//        else{
+//        } else if (score <= 59) {
 //            grade = "F";
+//        } else if (score > 100) {
+//            System.out.println("불가능한 점수 입력입니다.");
+//            grade = "X";
+//        } else if (score < 0) {
+//            System.out.println("불가능한 점수 입력입니다.");
+//            grade = "X";
 //        }
 
-        // # 1. 이 방식도 적절하지 않는 방식이다
-        if(score > 100){
-            System.out.println("불가능한 점수 입력입니다.");
-        }else if(score < 0){
-            System.out.println("불가능한 점수 입력입니다.");
-        }else if(score >= 90){
+        if (score > 100) {
+            grade = "X";
+        } else if (score < 0) {
+            grade = "X";
+        } else if (score > 89) {
             grade = "A";
-        }else if(score >= 80){
+        } else if (score > 79) {
             grade = "B";
-        }else if(score >= 70){
+        } else if (score > 69) {
             grade = "C";
-        }else if(score >= 60){
+        } else if (score > 59) {
             grade = "D";
-        }else{
+        } else {
             grade = "F";
         }
 
-        System.out.println("당신의 점수는 "+ score + "이고, 학점은 "+  grade + "입니다.");
+        System.out.println("당신의 점수는 " + score + "점이고, 학점은 " + grade + "입니다.");
     }
 }
