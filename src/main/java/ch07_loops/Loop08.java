@@ -1,61 +1,46 @@
 package ch07_loops;
-
-import java.util.Scanner;
-
 /*
-        *
-       **
-      ***
+            *
+           **
+          ***
+         ****
+        *****
+        이상의 별찍기를 위해서 고려해야 할 사항은 이전까지와 좀 달라집니다.
+        1. 개행 관련
+        2. 별찍기 관련
+        3. 공백 관련
  */
 public class Loop08 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("별을 몇 줄로 찍겠습니까 : ");
-        int row = scanner.nextInt();
-
-//        // j-- 형태
-//        for(int i = 0; i < row; i++){
-//            for(int j = 0; j < row; j++){
-//                System.out.print(" ");
-//            }
-//            for (int k = 0; k < row-i; k++){
-//                System.out.print("*");
-//            }
-//            System.out.println();
-//        }
-//
-//        for( int i = 0; i <= row; i++){
-//            // 공백
-//            for(int j = row; j > i; j--){
-//                System.out.print(" ");
-//            }
-//            // 별
-//            for(int k = 0; k < i; k++){
-//                System.out.print("*");
-//            }
-//            // 개행
-//            System.out.println();
-//        }
-
-        // j++ 형태
-        for(int i = 0; i < row; i++){
-            for(int j = 0; j < row-i; j++){
-                System.out.print(" ");
+        // # 1 풀이 -> j-- 적용
+        // 개행 관련 1차 for문
+        for( int i = 0 ; i < 6 ; i++ ) {
+            // 공백 관련 2차a for문
+            for( int j = 5 ; j > i ; j-- ) {
+                System.out.print("  ");
             }
-            for(int k = 0; k < i+1; k++){
-                System.out.print("*");
+            // 별 찍기 관련 2차b for문
+            for (int k = 0 ; k < i ; k++ ) {
+                System.out.print("🐱‍👤");
             }
+            // 개행 명령어
             System.out.println();
         }
 
-        for(int i = 0; i <= row; i++){
-            for(int j = 0; j < row - i; j++){
+
+        // # 2 풀이 -> j++ 적용 -> Loop06 참조
+        for ( int i = 0 ; i < 6 ; i ++ ) {
+            // 공백 j ++
+            for ( int j = 0 ; j < 6 - i ; j++ ) {
                 System.out.print(" ");
             }
-            for(int j = 0; j < i+1; j++){
-                System.out.print("#");
+            // 별찍기
+            for ( int k = 0 ; k < i ; k++ ) {
+                System.out.print("✔");
             }
+            // 개행
             System.out.println();
         }
+
     }
 }
