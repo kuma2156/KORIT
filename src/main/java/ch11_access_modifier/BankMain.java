@@ -39,5 +39,7 @@ public class BankMain {
         Bank bankUser2 = new Bank(501,"조은별",9000,2222);
 
         bankUser2.showAccountInfo2();
+
+//        bankUser1.setBalance(-1000);
     }
 }
