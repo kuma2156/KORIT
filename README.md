@@ -32,6 +32,142 @@
     </tr>
 </table>
 
+## 📌 주요 Java 개념 정리
+
+---
+
+### 🧬 제네릭 (Generics)
+
+- 컴파일 시 타입을 체크할 수 있도록 해주는 기능
+- 다양한 타입을 하나의 코드로 처리할 수 있게 해줌
+
+```java
+public class Box<T> {
+    private T value;
+
+    public void set(T value) {
+        this.value = value;
+    }
+
+    public T get() {
+        return value;
+    }
+}
+
+// 사용 예
+Box<String> stringBox = new Box<>();
+stringBox.set("Hello");
+String val = stringBox.get();  // 타입 안정성 보장
+```
+
+---
+
+### 🏗️ 빌더 패턴 (Builder Pattern)
+
+- 복잡한 객체를 단계적으로 구성하고 생성할 수 있는 디자인 패턴
+- 가독성이 좋고, 선택적인 매개변수를 설정할 때 유리함
+
+```java
+public class User {
+    private String name;
+    private int age;
+    private String email;
+
+    private User(Builder builder) {
+        this.name = builder.name;
+        this.age = builder.age;
+        this.email = builder.email;
+    }
+
+    public static class Builder {
+        private String name;
+        private int age;
+        private String email;
+
+        public Builder name(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public Builder age(int age) {
+            this.age = age;
+            return this;
+        }
+
+        public Builder email(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public User build() {
+            return new User(this);
+        }
+    }
+}
+
+// 사용 예
+User user = new User.Builder()
+    .name("홍길동")
+    .age(30)
+    .email("hong@example.com")
+    .build();
+```
+
+---
+
+### 🧩 싱글톤 패턴 (Singleton Pattern)
+
+- 애플리케이션에서 **단 하나의 인스턴스만 생성되도록** 보장하는 패턴
+- 주로 설정 클래스, 공통 유틸, DB 커넥션 등에 사용
+
+```java
+public class Singleton {
+    private static final Singleton instance = new Singleton();
+
+    // 외부에서 생성자 호출 못하게 막음
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        return instance;
+    }
+}
+```
+
+---
+
+### 🔧 Lombok
+
+- 반복되는 코드 (Getter, Setter, Constructor 등)를 자동으로 생성해주는 라이브러리
+- 코드 가독성 향상 및 생산성 증가
+
+```java
+import lombok.Getter;
+import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Builder;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class User {
+    private String name;
+    private int age;
+    private String email;
+}
+
+// 사용 예
+User user = User.builder()
+    .name("홍길동")
+    .age(25)
+    .email("hong@example.com")
+    .build();
+```
+
+---
+
 
 
 ## 🗓️ 학습 일지 요약
