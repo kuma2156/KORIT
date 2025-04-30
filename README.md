@@ -42,4 +42,5 @@
 | 4월 24일     | ch8 ~ ch9        | 메서드, 클래스                              |
 | 4월 25일     | ch9 ~ ch11        | 클래스의 생성자, Getter Setter, 접근 지정자             |
 | 4월 28일     | ch12, ch13, ch15          |  배열, Overloading, 상속자, super         |
-| 4월 29일     | ch13, ch14, ch15              |   inheritance, abstract class, interface, casting                            |   
+| 4월 29일     | ch13, ch14, ch15              |   Inheritance, Abstract Class, Interface, Casting_UpCasting                            |
+| 4월 30일     | ch15             |  Casting_DownCasting                        |
