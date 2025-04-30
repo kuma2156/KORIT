@@ -72,4 +72,29 @@ public class CentralControl {
             deviceArray[i].off();
         }
     }
+
+    // 이제 배열 내부를 돌면서 각 element의 고유 메서드를 호출 할 수 있도록 메서드를 작성할 예정
+    public void performSpectifiMethod(){
+        for(Power device : deviceArray){
+            if(device instanceof Tv){
+                Tv tv = (Tv) device;        // 명시적 다운캐스팅
+                tv.channelUp();             // 하위클래스의 고유메서드 실행
+            }else if( device instanceof Mouse){
+                Mouse mouse = (Mouse) device;
+                mouse.leftClick();
+            }else if (device instanceof LED){
+                LED led = (LED) device;
+                led.changeColor();
+            }else if (device instanceof Speaker){
+                Speaker speaker = (Speaker) device;
+                speaker.changeEqual();
+            }else if (device instanceof SmartPhone){
+                SmartPhone smartPhone = (SmartPhone) device;
+                smartPhone.touchScreen();
+            }else if (device instanceof Computer){
+                Computer computer = (Computer) device;
+                ((Computer) device).compute();
+            }
+        }
+    }
 }

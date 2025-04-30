@@ -32,5 +32,33 @@ public class Main {
 
         control1.powerUp();
         control1.powerOff();
+
+        System.out.println("----------------------");
+        // 스마트폰, 스피커, 티비, 객체를 각각 만들어서 순서대로 control1 객체의 필드인
+        // deviceArray에 대입하기
+        SmartPhone smartPhone1 = new SmartPhone();
+        Speaker speaker1 = new Speaker();
+        Tv tv1 = new Tv();
+        control1.addDevice(smartPhone1);
+        control1.addDevice(speaker1);
+        control1.addDevice(tv1);
+        System.out.println("----------------------");
+        // deviceArray에 연결된 제품들의 전원을 키도록 코드를 작성하시오
+        // tv1의 전원을 켜도록 코드를 작성하시오
+        control1.powerUp();
+        System.out.println("----------------------");
+
+        // deviceArray에 연결된 제품들의 전원을 끄도록 코드를 작성하시오
+        // tv1의 전원을 끄도록 코드를 작성하시오
+        control1.powerOff();
+        System.out.println("----------------------");
+
+        // 전체 고유 메서드 실행
+        control1.performSpectifiMethod();
+        System.out.println("----------------------");
+        // tv1 의 경우 control의 필드에 대입되지 않았기에
+        tv1.channelUp();
+        System.out.println("----------------------");
+
     }
 }
