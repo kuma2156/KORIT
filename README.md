@@ -184,4 +184,4 @@ User user = User.builder()
 | 4월 29일     | ch13, ch14, ch15              |   Inheritance, Abstract Class, Interface, Casting_UpCasting                            |
 | 4월 30일     | ch15 ~ ch19             |  Casting_DownCasting, toString(), .equals(), 디자인패턴(싱글톤,빌더), 제네릭                       |
 | 5월 07일     | ch19 ~ ch22             |   제네릭의 와일드카드, Collections, JSON, Exception                                        |
-| 5월 09일     | ch23                    |   람다식                 |
+| 5월 09일     | ch23 ~ ch24                   |   람다식, Stream API                 |
